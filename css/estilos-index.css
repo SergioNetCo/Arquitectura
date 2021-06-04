@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hind';
+}
+
+/* HEADER Y NAVEGADOR */
+
+header {
+    width: 100%;
+    background: #f12711;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(187, 94%, 54%, 0.397), #4e77b4c9), url(../Imagenes/portada.jpg);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(229, 75%, 55%, 0.5), #7ba8ebc9), url(../Imagenes/portada.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    background-attachment: fixed;
+}
+
+header > nav {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 5px 7px 30px;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(8, 73, 158, 0.356);
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: #f2f2f2;
+    background: url(../Imagenes-index/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TITULO Y SUBTITULO */
+
+.texto-header h1{
+    font-size: 80px;
+    color: white;
+}
+
+.texto-header h2{
+    font-size: 37px;
+    color: white;
+}
+
+.texto-header {
+    text-align: left;
+    padding: 20px;
+}
+
+/* SLIDER */
+
+.slider {
+    padding: 3px;
+}

@@ -9,38 +9,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Página principal</title>
-    <!-- JQUERY SCRIPT SLIDER -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--  JQUERY SCRIPT | SCROLL  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
-    $(document).ready(function(){
-      $('.slider').bxSlider();
-    });
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 100, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
     </script>
+    
 </head>
 
     <header>
         <!-- Navegador superior -->
     <nav>
         <a href="#">Inicio</a>
-        <a href="#">Proyectos</a>
+        <a href="#Proyectos">Proyectos</a>
         <a href="#">Experiencias personales</a>
-        <a href="#">Conoce sobre mi</a>
+        <a href="#sobre-mi">Conoce sobre mi</a>
     </nav>
         <!--  TITULO INICIAL  -->
     <div class="contenedor">
         <div class="texto-header">
-            <h1> Fidel Fernández Lopez </h1>
-            <h2> Delineante profesional con madera de arquitecto</h2>
+            <h1> Fidel Fernández López </h1>
+            <h2> Delineante Proyectista - Técnico PRL</h2>
         </div>
+        
     </div>
     </header>
-
-<body>
-    <div class="slider">
-        <div> <img src="Imagenes-index/ejemplo1.jpg" style="margin-left: auto; margin-right: auto;" alt=""> </div>
-        <div> <img src="Imagenes-index/ejemplo2.png" style="margin-left: auto; margin-right: auto;" alt=""> </div>
-    </div>    
-</body>
+    <body>
+        <main>
+            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-76.46,162.33 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #7ba8ebc9;"></path></svg></div>
+            <div id="sobre-mi"></div>
+            <div class="contenedor-sobre-mi">
+                <h1>Mi nombre es Fidel Fernández López y me dedico a la arquitectura</h1>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis soluta repellendus accusantium ut tempore odio dicta quas eaque porro atque dolor odit ullam aspernatur quam rerum expedita mollitia cumque placeat quia quibusdam exercitationem, voluptates modi praesentium. Quas impedit rerum earum iusto repudiandae, aspernatur beatae error fuga? Dolores iste in voluptatem?</p>
+                <h1>¿Por que soy el mejor en lo que hago?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam maiores aperiam cum quod, non vitae sunt tempore, obcaecati pariatur totam, dignissimos exercitationem error minima veniam molestiae accusamus ut! Asperiores soluta excepturi officiis voluptatibus, eum earum impedit architecto consequuntur, accusantium corrupti, repellat odit explicabo iusto repellendus cupiditate optio nemo at.</p>
+            </div>
+        </main>
+        <div class="main2">
+        <main>
+            <div id="Proyectos"></div>
+            <div class="titulo-proyectos"><h1> PROYECTOS </h1></div>
+            <div class="proyectos">
+                <img src="Imagenes-index/gif1.gif" alt="">
+                <img src="Imagenes-index/gif2.gif" alt="">
+                <img src="Imagenes-index/gif3.gif" alt="">
+                <img src="Imagenes-index/gif4.gif" alt="">
+                <img src="Imagenes-index/gif5.gif" alt="">
+                <img src="Imagenes-index/gif6.gif" alt="">
+            </div>
+        </main>
+    </div>
+    </body>
+    <div class="footer">
+        <h1>Sergio Fernández Desing | Página sobre Fidel Fernández</h1>
+    </div>
 </html>

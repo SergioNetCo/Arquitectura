@@ -118,6 +118,23 @@ nav > a:hover {
 
 }
 
+/* IMAGENES DE PROYECTOS */
+
+.proyectos > img {
+    width: 33%;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 15px;
+    -webkit-transition: 1s linear;
+    transition: 0.3s linear;
+    background-color: rgba(81, 107, 223, 0.705);
+}
+
+.proyectos > img:hover{
+    -webkit-box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.747);
+    box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.712);
+  }
+
 /* MAIN 2 */
 
 .main2 {

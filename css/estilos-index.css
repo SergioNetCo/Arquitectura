@@ -97,6 +97,12 @@ nav > a:hover {
     font-weight: 300;
 }
 
+/* MAIN 2 | PROYECTOS */
+
+.main2 {
+    background:rgba(81, 107, 223, 0.705);
+}
+
 /* PROYECTOS */
 
 .proyectos {
@@ -110,12 +116,6 @@ nav > a:hover {
     font-size: 50px;
     font-weight: 600;
     padding-top: 20px;
-}
-
-.proyectos > img {
-    width: 33%;
-    padding: 25px;
-
 }
 
 /* IMAGENES DE PROYECTOS */
@@ -135,12 +135,6 @@ nav > a:hover {
     box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.712);
   }
 
-/* MAIN 2 */
-
-.main2 {
-    background:rgba(81, 107, 223, 0.705);
-}
-
 /* FOOTER */
 
 .footer h1 {
@@ -149,4 +143,38 @@ nav > a:hover {
 
 .footer {
     background: rgba(8, 73, 158, 0.356);
+}
+
+/* MAIN 3 | EXPERIENCIAS PERSONALES */
+
+.titulo-experiencias{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.experiencias {
+    text-align: justify;
+    padding-left: 450px;
+    max-width: 1500px;
+}
+
+.experiencias p {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.experiencias p span {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    text-align: center;
+    font-weight: 600;
+    background: rgb(38, 0, 252);
+    color: rgb(0, 0, 0);
+    border-radius: 0%;
+    display: inline-block;
+    width: 30px;
+    height: 55px;
+    padding: 2px;
+    margin-right: 10px;
 }

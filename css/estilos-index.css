@@ -7,11 +7,14 @@
 body{
     font-family: 'Hind';
     background: #1234f5b0;
+    width: auto;
+    
 }
 
 html {
     scroll-behavior: smooth;
   }
+
 
 
 /* HEADER Y NAVEGADOR */
@@ -82,9 +85,10 @@ nav > a:hover {
 /* SOBRE MI */
 
 .contenedor-sobre-mi {
-    text-align: justify;
-    padding-left: 450px;
-    max-width: 1500px;
+    padding: 30px 0;
+    width: 60%;
+    max-width: 2000px;
+    margin: auto;
 }
 
 .contenedor-sobre-mi h1 {
@@ -93,8 +97,10 @@ nav > a:hover {
 }
 
 .contenedor-sobre-mi p {
+    text-align: justify;
     font-size: 35px;
     font-weight: 300;
+    padding: 0px 0px 30px 15px;
 }
 
 /* MAIN 2 | PROYECTOS */
@@ -145,9 +151,10 @@ nav > a:hover {
 }
 
 .experiencias {
-    text-align: justify;
-    padding-left: 450px;
-    max-width: 1500px;
+    padding: 30px 0;
+    width: 60%;
+    max-width: 2000px;
+    margin: auto;
 }
 
 .experiencias p {
@@ -167,6 +174,14 @@ nav > a:hover {
     height: 55px;
     padding: 2px;
     margin-right: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid rgb(218, 218, 218); 
+    border-bottom: 2px solid rgb(9, 61, 139);
+    height: 10px;
+    width: 100%;
 }
 
 /* FOOTER */
@@ -191,4 +206,12 @@ nav > a:hover {
     font-weight: 300;
     text-decoration: none;
     color: #ffffffaf;
+}
+
+.linea-final hr{
+    border: 0;
+    border-top: 2px solid rgb(218, 218, 218);
+    border-bottom: 2px solid #000000;
+    height: 7px;
+    width: 100%;
 }

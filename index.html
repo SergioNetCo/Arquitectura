@@ -1,150 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="Imagenes/logofidel.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/estilos-index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Página principal</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/estilos-index.css">
+<title>Página principal</title>
+
+    <!--  ESTILO DE LETRA  -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;400;700;900&display=swap" rel="stylesheet">
 
     <!--  JQUERY SCRIPT | SCROLL  -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>
         $(document).ready(function(){
-          // Add smooth scrolling to all links
           $("a").on('click', function(event) {
         
-            // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
-              // Prevent default anchor click behavior
               event.preventDefault();
         
-              // Store hash
               var hash = this.hash;
-        
-              // Using jQuery's animate() method to add smooth page scroll
-              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+
               $('html, body').animate({
                 scrollTop: $(hash).offset().top
               }, 100, function(){
         
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
               });
-            } // End if
+            } 
           });
         });
-    </script>
-
+</script>
 </head>
-
-    <header>
-
-        <!-- Navegador superior -->
-
-    <nav>
-        <div id="inicio"></div>
-        <a href="#sobre-mi">Conoce sobre mi</a>
-        <a href="#Proyectos">Proyectos</a>
-        <a href="#Experiencias-personales">Experiencias personales</a>
-    </nav>
-
-        <!--  TITULO INICIAL  -->
-
-    <div class="contenedor">
-        <div class="texto-header">
-            <h1> Fidel Fernández López </h1>
-            <h2> Delineante Proyectista - Técnico PRL</h2>
-        </div>
-        
+    <div class="navegador">
+        <h1>IP SERVIDOR: 92.172.108.86:25565</h1>
+        <a href="#"> EVENTOS </a>
+        <a href="#"> REGLAS  </a>
+        <a href="#"> SOBRE NOSOTROS </a>
     </div>
-    </header>
-    <body>
-        <main>
-            <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-76.46,162.33 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #7ba8ebc9;"></path></svg></div>
-            <div id="sobre-mi"></div>
-            <div class="contenedor-sobre-mi">
-                <h1>Mi nombre es Fidel Fernández López, experto diseñando edificios.</h1>
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis soluta repellendus accusantium ut tempore odio dicta quas eaque porro atque dolor odit ullam aspernatur quam rerum expedita mollitia cumque placeat quia quibusdam exercitationem, voluptates modi praesentium. Quas impedit rerum earum iusto repudiandae, aspernatur beatae error fuga? Dolores iste in voluptatem?</p>
-                <h1>¿Por que soy el mejor en lo que hago?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nam maiores aperiam cum quod, non vitae sunt tempore, obcaecati pariatur totam, dignissimos exercitationem error minima veniam molestiae accusamus ut! Asperiores soluta excepturi officiis voluptatibus, eum earum impedit architecto consequuntur, accusantium corrupti, repellat odit explicabo iusto repellendus cupiditate optio nemo at.</p>
-            </div>
-        </main>
-
-        <!--  PROYECTOS DE SANTALUCIA  -->
-
-        <div class="main2">
-        <main>
-            <div id="Proyectos"></div>
-            <div class="titulo-proyectos"><h1> PROYECTOS </h1></div>
-            <hr>
-            <div class="proyectos">
-                <img src="Imagenes-index/gif1.gif" alt="">
-                <div class="hover-proyectos">
-                    <p></p>
-                </div>
-                <img src="Imagenes-index/alcala.JPG" alt="">
-                <div class="hover-proyectos">
-                    <p></p>
-                </div>
-                <img src="Imagenes-index/gif3.gif" alt="">
-                <div class="hover-proyectos">
-                    <p></p>
-                </div>
-                <img src="Imagenes-index/barcelona.jpg" alt="">
-                <div class="hover-proyectos">
-                    <p></p>
-                </div>
-                <img src="Imagenes-index/ciudadreal.jpg" alt="">
-                <div class="hover-proyectos">
-                    <p></p>
-                </div>
-                <img src="Imagenes-index/premiademar.JPG" alt="">
-                <div class="hover-proyectos">
-                    <p></p>
-                </div>
-            </div>
-            <hr>
-        </div>
-        </main>
-
-            <!--  EXPERIENCIAS PERSONALES  -->
-
-        <div class="main3">
-        <main>
-            <div id="Experiencias-personales"></div>
-            <div class="titulo-experiencias"><h1>EXPERIENCIAS PERSONALES</h1></div>
-            <div class="experiencias">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga expedita inventore laboriosam, accusamus, facilis provident tempora rem rati
-                   one suscipit officia eius! Nesciunt, molestiae nemo temporibus quasi labore id, culpa facere earum quas necessitatibus consequatur voluptates 
-                   corrupti, fuga vero ex error laudantium placeat aspernatur.</p><br>
-                <p><span>1</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque omnis suscipit molestias quasi, id itaque, illum rem ea molestiae, 
-                    perspiciatis quae vitae. Recusandae tenetur ducimus odit. Rerum, ipsum. Numquam mollitia esse corrupti similique, expedita natus. Quod, illo 
-                    eveniet. Vitae eos ad est quas? Laboriosam accusamus ut dicta expedita labore est quam ducimus veritatis sunt voluptate, enim aliquid officia, 
-                    optio facilis dolores, vitae magnam quaerat.
-                </p><br>
-                <p><span>2</span>
-                    Lorem, dolor sit amet consectetur adipisicing elit. Magni non qui sint, velit veritatis quo nemo obcaecati voluptate corporis nesciunt 
-                    molestias illo optio delectus sed! Harum reprehenderit, nostrum laboriosam natus perspiciatis pariatur beatae omnis. Deserunt ipsam et dolor 
-                    dolorum repudiandae?
-                </p>
     
-            </div>
-        </main>
+<body>
+    <div class="contenedor-general">
+        <div class="main-1">
+            <h1> EVENTOS </h1>
+            <hr>
+            <p> <span>1</span> Apertura del Nether y del END ➟ 23 / 06 / 2021 | 16:00 - 16:30 |</p>
+            <p> <span>2</span> Construcción del Mercado ➟ SIN DEFINIR </p>
+            <p> <span>3</span> Apertura prevista del Mercado en 0,0 ➟ 30 / 06 / 2021 | 16:00-16:30 |</p>
+            <p> <span>4</span> Todos a matar al dragon ➟ 03 / 07 / 2021 | 16:00-16:30 | (desde aqui, el end es libre para ser explorado) |</p>
+            <h1> CONSTRUCCIONES AUN POR DETERMINAR</h1>
+            <p> La primera guerra Mundial (por definir)</p>
+            <p> Construccion del Juzgado (por definir)</p>
+            <p> Construccion del Coliseo PvP (por definir)</p>
+            <h1> ¿Cada cuanto se iran realizando los eventos? </h1>
+            <p> Mediante los jugadores vayan jugando y aumentando su nivel de conocimientos sobre el juego, se harán una serie de eventos PVP / PVE con grandes recompensas, en está pagina se daran
+                a conocer los eventos mediante vaya transcurriendo el tiempo del servidor.
+            </p>
+            <hr>
+            <h1> REGLAS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur sed facere, temporibus nemo debitis, repellendus quae labore, quos ad vel ex quisquam quasi. Animi quisquam consequuntur facilis. Vero suscipit omnis, debitis assumenda iste voluptate.</p>
+            <hr>
+            <h1> SOBRE NOSOTROS </h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tus muertos picados en sangre cabron, soluta assumenda esse reiciendis ipsam deleniti sunt ullam excepturi officia cumque nihil alias corrupti quos voluptatibus facere dicta ut ipsa laboriosam. Aspernatur quia in deserunt ea laboriosam repellendus quos omnis tempora molestias vitae porro sequi, dolorum quam, accusantium doloribus!</p>
         </div>
-    
-    </body>
+    </div>
+</body>
+<footer>
     <div class="footer">
-        <h1> Sergio Fernández Desing ® | Página sobre Fidel Fernández </h1>
-        <div class="linea-final"><hr></div>
-        <div class="boton">
-            <a href="#inicio">Volver arriba</a>
-        </div>
+    <h1> Design Sergio Fernández | Minecraft 1.17 España </h1>
     </div>
+</footer>
 </html>

@@ -1,132 +1,217 @@
-/* ESTILO DE LA PÁGINA */
-
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Hind';
+    background: #1234f5b0;
+    width: auto;
+    
+}
+
 html {
-    font-family: 'Encode Sans', sans-serif;
     scroll-behavior: smooth;
-    background: url(../imagenes-index/fondo.jpg);
+  }
+
+
+
+/* HEADER Y NAVEGADOR */
+
+header {
+    width: 100%;
+    background: #f12711;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(187, 54%, 46%, 0.397), #2c73ddc9), url(../Imagenes/portada.jpg);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(229, 57%, 69%, 0.89), #739cdac9), url(../Imagenes/portada.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: relative;
+    background-attachment: fixed;
+}
+
+header > nav {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 5px 7px 30px;
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 20px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    padding-left: 10px;
+    padding-right: 10px;
+    background: rgba(8, 73, 158, 0.356);
+    transition: background-color 0.5s linear;
+}
+
+nav > a:hover {
+    background-color: #3F51B5;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: url(../Imagenes-index/header.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/* CONTENEDOR GLOBAL */
+/* TITULO Y SUBTITULO */
 
-.contenedor-general {
-    padding: 60px 0;
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* NAVEGADOR */
-
-.navegador {
-    text-align: center;
-    padding-top: 10px;
-    background-color: black;
-    width: auto;
-    height: 60px;
-}
-
-.navegador a {
-    text-decoration: none;
-    background-color: black;
-    color: #33ff00;
-    text-align: center;
-    margin-right: 10px;
-    font-weight: 400;
-    font-size: 25px;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
-    padding: 5px;
-    transition: background-color 0.5s linear;
-    transition: color 0.5 linear;
-}
-
-.navegador a:hover {
-    background-color: #2aa30b;
+.texto-header h1{
+    font-size: 70px;
     color: white;
 }
 
-.navegador h1 {
+.texto-header h2{
+    font-size: 37px;
+    color: white;
+}
+
+.texto-header {
     text-align: left;
-    color: white;
-    font-weight: 600;
-    font-size: 30px;
-    margin-left: 20px
+    padding: 20px;
 }
 
-.imagen-navegador {
-    text-align: right;
-    width: 10%;
-    height: 10%;
-}
+/* SOBRE MI */
 
-/* MAIN - 1 */
-
-.main-1 {
-    padding: 20px 0;
-    width: 90%;
-    max-width: 1200px;
+.contenedor-sobre-mi {
+    padding: 30px 0;
+    width: 60%;
+    max-width: 2000px;
     margin: auto;
-    overflow: hidden;
-    background-color: rgb(255, 255, 255);
-    border-radius: 6%;
 }
 
-.main-1 h1 {
-    text-align: center;
-    margin-top: 5px;
+.contenedor-sobre-mi h1 {
+    font-size: 60px;
     font-weight: 600;
-    font-size: 25px;
 }
 
-.main-1 p {
-    padding: 20px ;
+.contenedor-sobre-mi p {
     text-align: justify;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 300;
+    padding: 0px 0px 30px 15px;
 }
 
-.main-1 span {
+/* MAIN 2 | PROYECTOS */
+
+.main2 {
+    background:rgba(81, 107, 223, 0.705);
+}
+
+/* PROYECTOS */
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3px;
+}
+
+.titulo-proyectos {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+/* IMAGENES DE PROYECTOS */
+
+.proyectos > img {
+    width: 33%;
+    justify-content: center;
+    padding: 10px;
+    padding-left: 15px;
+    -webkit-transition: 1s linear;
+    transition: 0.3s linear;
+    background-color: rgba(81, 107, 223, 0.705);
+}
+
+.proyectos > img:hover{
+    -webkit-box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.747);
+    box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.712);
+  }
+
+/* MAIN 3 | EXPERIENCIAS PERSONALES */
+
+.titulo-experiencias{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.experiencias {
+    padding: 30px 0;
+    width: 60%;
+    max-width: 2000px;
+    margin: auto;
+}
+
+.experiencias p {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.experiencias p span {
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
     text-align: center;
     font-weight: 600;
-    background: rgb(30, 150, 6);
+    background: rgb(38, 0, 252);
     color: rgb(0, 0, 0);
     border-radius: 0%;
     display: inline-block;
-    width: 20px;
-    height: 30px;
+    width: 30px;
+    height: 55px;
     padding: 2px;
     margin-right: 10px;
 }
 
-.main-1 hr {
+hr {
+    border: 0;
+    border-top: 2px solid rgb(218, 218, 218); 
+    border-bottom: 2px solid rgb(9, 61, 139);
+    height: 10px;
     width: 100%;
-    height: 5px;
-    background-color: rgba(0, 128, 0, 0.61);
-    color: rgba(0, 128, 0, 0.301);
-    margin-top: 10px;
 }
 
 /* FOOTER */
 
-.footer {
-    width: 100%;
-    height: 10%;
-    background-color: #1eff006e;
-    margin: 2px;
-}
-
 .footer h1 {
     text-align: center;
+}
+
+.footer {
+    background: rgba(8, 73, 158, 0.356);
+}
+
+.boton {
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    background: rgba(8, 73, 158, 0.356);
+    text-align: center;
+    width: 1900px;
+}
+
+.boton a{
     font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #ffffffaf;
+}
+
+.linea-final hr{
+    border: 0;
+    border-top: 2px solid rgb(218, 218, 218);
+    border-bottom: 2px solid #000000;
+    height: 7px;
+    width: 100%;
 }
